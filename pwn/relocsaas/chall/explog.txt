@@ -1,0 +1,17 @@
+Welcome to <call relocs.c as a service>!
+Do you feel like pwning some OG code today? Hopefully yes :D
+> /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa
+arg: /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa
+arg: /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa
+arg: /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa
+arg: /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa
+arg: /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa
+arg: /tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaa
+Unknown command
+> print_flag
+> relocs /tmp/exploitelf --abs-syms
+arg: /tmp/exploitelf
+arg: --abs-syms
+Absolute symbols
+ Num:    Value Size  Type       Bind        Visibility  Name
+    0 00000000      0 STT_NOTYPE  STB_LOCAL  STV_DEFAULT flag{technically_now_we_can_go_flex_that_we_have_an_0day_on_linus_torvalds_code_right?}

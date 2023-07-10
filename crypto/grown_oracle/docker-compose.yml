@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  crypto_grown_oracle:
+    container_name: crypto_grown_oracle_server
+    build: .
+    ports:
+      - 10017:5000
+    privileged: true

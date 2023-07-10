@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  crypto_random:
+    container_name: crypto_random_server
+    build: .
+    ports:
+      - 10018:5000
+    privileged: true

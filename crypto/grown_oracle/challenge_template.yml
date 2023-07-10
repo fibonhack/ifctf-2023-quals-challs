@@ -1,0 +1,14 @@
+name: "Grown oracle"
+author: "marcog"
+
+description: marcogpt had to find a description for this chall but is not even able to ask chatgpt to do so
+port: 10017
+host: 'challs.{{ CTFD_URL }}'
+connection_info: 'nc {{ host }} {{ port }}'
+healthcheck: 'sol/sol.py REMOTE HOST={{ host }} PORT={{ port }}'
+
+topics:
+- crypto
+
+files:
+- dist/chall.py

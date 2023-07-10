@@ -1,0 +1,23 @@
+name: "emojifier"
+author: "FELD"
+
+description: Let's warm up!
+port: 10025
+host: 'challs.{{ CTFD_URL }}'
+connection_info: 'nc {{ host }} {{ port }}'
+healthcheck: 'health_check.py HOST={{ host }} PORT={{ port }}'
+
+topics:
+- pwn
+- baby
+
+files:
+- dist/emojifier
+
+
+
+# Non utilizzato: c'è il file flag.txt che in automatico viene caricato dal parser
+# flags:
+# - cusu
+
+# State

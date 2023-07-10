@@ -1,0 +1,15 @@
+name: "Baby oracle"
+author: "lor3nz"
+
+description: The app is not yet ready, but the login function is already implemented, mind to check it out?
+port: 10019
+host: 'challs.{{ CTFD_URL }}'
+connection_info: 'nc {{ host }} {{ port }}'
+healthcheck: 'solve/solve.py HOST={{ host }} PORT={{ port }}'
+
+topics:
+- crypto
+- misc
+
+files:
+- dist/server.py

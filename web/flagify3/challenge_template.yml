@@ -1,0 +1,21 @@
+name: flagify 3
+author: drw0if, b0n0b0
+
+description: Glad I've switched to react, now it must be secure! [Bank](bank.flagify3.fibonhack.it) [Shop](shop.flagify3.fibonhack.it)
+# port: 80
+# host: '{{ CTFD_URL }}'
+# connection_info: 'nc {{ host }} {{ port }}'
+# healthcheck: 'src/exp.py --hostname {{ host }} --port {{ port }}'
+
+topics:
+- web
+
+files:
+- dist.zip
+
+
+# Non utilizzato: c'è il file flag.txt che in automatico viene caricato dal parser
+# flags:
+# - cusu
+
+# State

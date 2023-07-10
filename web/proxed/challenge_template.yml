@@ -1,0 +1,21 @@
+name: proxed
+author: drw0if
+
+description: Just a blazing fast proxy with a useless application behind. [Spawn an instance](proxed.fibonhack.it:10001), then you have 3 minutes to pwn
+port: 10001
+host: proxed.fibonhack.it
+connection_info: 'http://{host}:{port}'
+# healthcheck: 'src/exp.py --hostname {{ host }} --port {{ port }}'
+
+topics:
+- web
+
+files:
+- dist.zip
+
+
+# Non utilizzato: c'è il file flag.txt che in automatico viene caricato dal parser
+# flags:
+# - cusu
+
+# State

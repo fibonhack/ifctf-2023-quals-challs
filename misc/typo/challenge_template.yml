@@ -1,0 +1,14 @@
+name: "typo"
+author: "lorenz"
+
+description: Check out my new secure code executer, you pass it some code and your key and it will send you the result with total privacy!
+port: 10014
+host: 'challs.{{ CTFD_URL }}'
+connection_info: 'nc {{ host }} {{ port }}'
+healthcheck: 'solve/solve.py HOST={{ host }} PORT={{ port }}'
+
+topics:
+- misc
+
+files:
+- dist/server.py

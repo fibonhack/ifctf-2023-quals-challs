@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  pwn_pureland:
+    container_name: pwn_pureland_server
+    build:
+      context: .
+    ports:
+    - "10013:5000/tcp"
+    privileged: true

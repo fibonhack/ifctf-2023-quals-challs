@@ -1,0 +1,14 @@
+name: "RANDOM"
+author: "marcog"
+
+description: random random random
+port: 10018
+host: 'challs.{{ CTFD_URL }}'
+connection_info: 'nc {{ host }} {{ port }}'
+# healthcheck: 'sol/sol.py REMOTE HOST={{ host }} PORT={{ port }}'
+
+topics:
+- crypto
+
+files:
+- dist/chall.py

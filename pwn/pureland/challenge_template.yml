@@ -1,0 +1,15 @@
+name: "Pureland"
+author: "gio-d3141"
+
+description: I found this cool functional programming language, it is so pure you cannot do anything, right?
+port: 10013
+host: 'challs.{{ CTFD_URL }}'
+connection_info: 'nc {{ host }} {{ port }}'
+healthcheck: 'src/healthcheck.py --hostname={{ host }} --port={{ port }}'
+
+topics:
+- pwn
+- cusumano
+
+files:
+- dist/pureland.zip

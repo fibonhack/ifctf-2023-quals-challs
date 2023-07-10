@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  crypto_baby_oracle:
+    container_name: crypto_baby_oracle
+    build: .
+    ports:
+      - 10019:5000
+    privileged: true
+    environment:
+      - "JAIL_ENV_FLAG=ifctf{mor3_lik3_b4byPikl3_th4n_b4by0rac1e}"

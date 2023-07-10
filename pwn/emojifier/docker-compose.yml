@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  pwn_emoji:
+    container_name: pwn_emoji
+    build:
+      context: .
+    ports:
+    - "10025:5000/tcp"
+    privileged: true

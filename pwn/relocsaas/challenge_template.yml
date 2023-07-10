@@ -1,0 +1,23 @@
+name: "relocsAAS"
+author: "nick0ve"
+
+description: Do you like elfs?
+port: 10016
+host: 'challs.{{ CTFD_URL }}'
+connection_info: 'nc {{ host }} {{ port }}'
+healthcheck: 'x.py HOST={{ host }} PORT={{ port }}'
+
+topics:
+- pwn
+- elf
+
+files:
+- dist/flag_redacted.elf
+- dist/patch.diff
+- dist/relocs
+
+flags:
+- ifctf{technically_now_we_can_go_flex_that_we_have_a_0day_on_linux_right?}
+
+
+# state

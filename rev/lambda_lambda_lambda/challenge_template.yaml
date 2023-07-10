@@ -1,0 +1,11 @@
+name: Lambda lambda lambda!
+author: gio-d3141
+
+description: Lambda lambda lambda
+
+topics:
+- rev
+- cusumano
+
+files:
+- dist/lambda.py

@@ -1,0 +1,24 @@
+name: "jitland"
+author: "nick0ve"
+
+description: do you ever jit compile?
+port: 10015
+host: "challs.{{ CTFD_URL }}"
+connection_info: "nc {{ host }} {{ port }}"
+healthcheck: "challenge-src/exp.py --hostname={{ host }} --port={{ port }}"
+
+topics:
+  - pwn
+  - jit
+  - pain
+
+files:
+  - dist/Cargo.toml
+  - dist/Dockerfile
+  - dist/server
+  - dist/server.rs
+# Non utilizzato: c'è il file flag.txt che in automatico viene caricato dal parser
+# flags:
+# - cusu
+
+# State
